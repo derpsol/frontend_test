@@ -23,3 +23,7 @@ p.truncated + label {
   display: inline;
 }
 
+.button {
+  color: "blue";
+  display: "inline";
+}

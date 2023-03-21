@@ -1,18 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import CollapseText from './CollapseText';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import CollapseText from "./CollapseText";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
-    <CollapseText
-      height="106px"
-      width="220px"
-    >
+    <CollapseText height="106px" width="220px">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industrys standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
