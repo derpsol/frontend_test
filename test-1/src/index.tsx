@@ -10,18 +10,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <CollapseText
-      height="250px"
-      width="80px"
-      moreButton={
-        <span>
-          ...<a>more</a>
-        </span>
-      }
-      lessButton={
-        <span>
-          ...<a>less</a>
-        </span>
-      }
+      height="106px"
+      width="220px"
     >
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industrys standard dummy text ever since the
