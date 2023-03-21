@@ -5,24 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+      body {
+        font-family: 'Montserrat',serif;
+      }
+      .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 10px;
+        width: 230px;
+        height: 128px;
+        background: #0F1529;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        position: relative;
+        border: 1px solid transparent;
+        background-clip: padding-box;
+      }
+      .card::after {
+        position: absolute;
+        top: -1px; bottom: -1px;
+        left: -1px; right: -1px;
+        background: linear-gradient(to right, #3F73FF, #53CAFF);
+        content: '';
+        z-index: -1;
+        border-radius: 8px;
+      }
+      .amount {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .content {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+      }
+      .profit {
+        width: 120px;
+      }
+      .rol {
+        width: 91px;
+      }
+      .unrealized .amount {
+        color: #2FDECC;
+      }
+      .realized .amount {
+        color: #ED6363;
+      }
+      .content {
+        color: #95ABD3;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <div>
-        <div>+10%</div>
-        <div>Traders’ Unrealized ROI</div>
+    <div class="card">
+      <div class="unrealized rol">
+        <div class="amount">+10%</div>
+        <div class="content">Traders’ Unrealized ROI</div>
       </div>
-      <div>
-        <div>+17,945.42</div>
-        <div>Traders’ Unrealized Total Profit</div>
+      <div class="unrealized profit">
+        <div class="amount">+17,945.42</div>
+        <div class="content">Traders’ Unrealized Total Profit</div>
       </div>
-      <div>
-        <div>-15%</div>
-        <div>Traders’ Realized ROI</div>
+      <div class="realized rol">
+        <div class="amount">-15%</div>
+        <div class="content">Traders’ Realized ROI</div>
       </div>
-      <div>
-        <div>-17,945.42</div>
-        <div>Traders’ Realized Total Profit</div>
+      <div class="realized profit">
+        <div class="amount">-17,945.42</div>
+        <div class="content">Traders’ Realized Total Profit</div>
       </div>
     </div>
   </body>
